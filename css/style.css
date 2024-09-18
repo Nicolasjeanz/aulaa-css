@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Protest+Guerrilla&display=swap');
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -9,12 +11,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+h2 { 
+    font-family: "Protest Guerrilla", sans-serif;
+}
 .container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 .card {
     background-color: #fff;
@@ -34,7 +41,7 @@ body {
     object-fit: cover;
     margin: 0 auto;
 }
-.card-title {
+.cardtitle {
     font-size: 1.5em;
     margin: 20px 0 0 0;
     text-align: center;
@@ -50,4 +57,29 @@ body {
     color: #555;
     margin: 0;
     text-align: center;
+}
+.logos-itens {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo-itens img {
+    width: 100%;
+    height: auto;
+    display: block;/* remover o espaço abaixo da imagem*/
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.logo-item img:hover {
+    transform: scale(1.05); /*Aumenta a escala da imagem em 5% quando passa o mouse */
+}
+.card:hover {
+    transform: scale(1.05); /*Aumenta a escala da imagem em 5% quando passa o mouse */
+}
+i {
+    color: aqua;
+}
+.fa-wifi{
+    color: red;
 }
